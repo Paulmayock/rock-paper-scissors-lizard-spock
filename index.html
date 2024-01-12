@@ -8,16 +8,32 @@
     <title>Rock, Paper, Scissors, Lizard, Spock</title>
 </head>
 <body>
+
+    <!--Start game page-->
+    <div id="start-page-text">
+        <h1>Rock Paper Scissors Lizard Spock</h1>
+    </div>
+
+    <!--Start game button-->
+
+    <div id="start-game-btn">
+        <button class="btnStart" onclick="startGame()">
+            
+            <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+
+                <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+
+            </svg>
+
+
+            <span>START GAME</span>
+         </button>
+    </div>
+
     <!--Title block-->
     <section class="title block">
-       <ul>
-        <!--user choice list-->
-          <li>Rock</li>
-          <li>Paper</li>
-          <li>Scissors</li>
-          <li>Lizard</li>
-          <li>Spock</li>
-       </ul>
+       
        <div class="score">
         <div class ="score-title">Score</div>
         <div class="score-count">10</div>
