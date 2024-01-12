@@ -18,17 +18,24 @@
 
     <div id="start-game-btn">
         <button class="btnStart" onclick="startGame()">
-            
-            <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
-
-                <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
-                <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
-
-            </svg>
-
 
             <span>START GAME</span>
          </button>
+    </div>
+
+     <!-- End Screen Page -->
+     <div id="endScreen">
+
+        <div id="endScreenContent">
+
+            <h1 id="txtEndTitle">GAME OVER!</h1>
+            <br>
+            <h2 id="txtEndMessage">You Win, Lose</h2>
+
+            <div id="btnReplay" class="btn" onclick="replay()">PLAY AGAIN</div>
+
+        </div>
+
     </div>
 
     <!--Title block-->
