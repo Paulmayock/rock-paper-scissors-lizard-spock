@@ -65,3 +65,23 @@ h1 {
     cursor: pointer;
     background: #40a108;
 }
+.green-glow {
+    border: 4px solid green;
+    box-shadow: 0 0 10px green;
+}
+
+
+.red-glow {
+    border: 4px solid red;
+    box-shadow: 0 0 10px red;
+}
+
+.yellow-glow {
+    border: 4px solid yellow;
+    box-shadow: 0 0 10px yellow;
+}
+.score {
+    display: inline-block;
+    padding: 60px;
+   
+}
