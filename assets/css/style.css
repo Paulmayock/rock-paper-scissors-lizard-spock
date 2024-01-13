@@ -49,3 +49,19 @@ h1 {
 .result > p {
     text-align: center;
 }
+
+.choices {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.choice {
+    display: inline-block;
+    padding: 5px;
+    margin: 0 10px;
+    }
+
+.choice:hover {
+    cursor: pointer;
+    background: #40a108;
+}
