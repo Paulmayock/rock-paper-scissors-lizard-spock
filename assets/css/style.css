@@ -154,7 +154,7 @@ h1 {
 }
 .container {
     color: white;
-    text-align: right;
+    text-align: center;
     margin-top: 40px;
     height: 100px;
 }
@@ -163,3 +163,32 @@ h1 {
     cursor: pointer;
     background: #ffffff;
 }
+/* End game screen */
+#endScreen {
+    position: absolute;
+    z-index: 101;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.7);
+    display: none;
+    margin: 0 auto;
+    color: white;
+}
+#endScreenContent {
+    width: 500px;
+    height: 350px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 90px;
+    text-align: center;
+}
+
+#endScreenContent > h1 {
+    font-size: 50px;
+}
+
+#endScreenContent > h2 {
+    font-size: 30px;
+}
+/* Media Queries large or landscape phones (576px and up)*/ 
+@media screen and (min-width: 576px)
