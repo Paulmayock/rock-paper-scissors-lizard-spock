@@ -1,174 +1,75 @@
-// Global variables to set the starting score
+// Starting score for user and computer
 let userScore = 0;
 let computerScore = 0;
 
-// Global variables to target score section and game message 
-const userScore_span = document.getElementById('win');
-const computerScore_span = document.getElementById('lose');
-const result_p = document.querySelector('.result > p');
+// Score section and game messages 
+const userScore_tab = document.getElementById('win');
+const computerScore_tab = document.getElementById('lose');
+const result = document.querySelector('.result > p');
 
-// Global variables to assign game icons
+// Game icons assigned
 const rockDiv = document.getElementById('r');
 const paperDiv = document.getElementById('p');
 const scissorsDiv = document.getElementById('s');
 const lizardDiv = document.getElementById('l');
-const spockDiv = document.getElementById('v');
+const spockDiv = document.getElementById('sp');
 
-// Global variable to target end game screen content
-let txtEndTitle = document.getElementById('txtEndTitle');
-let txtEndMessage = document.getElementById('txtEndMessage');
+// End game screen section
+let EndTitle = document.getElementById('EndTitle');
+let EndMessage = document.getElementById('EndMessage');
 
-// Get computer random choice 
-function getComputerCoice() {
-    // Choices 
-    const choices  = ['r','p','s','l','v'];
+// Computers choice
+function ComputersChoice()
+{ 
+    const choice  = ['r','p','s','l','sp'];
     const randomNumber = Math.floor(Math.random() * 5);
-    return choices[randomNumber];
+    return choice[randomNumber];
 }
-// Convert the letter to the correspondant word
-function convertToWord(letter) {
+
+
+// Convert letter to word
+function LetterToWord()
+{
     if (letter === 'r') return "Rock";
     if (letter === 'p') return "Paper";
     if (letter === 's') return "Scissors";
     if (letter === 'l') return "Lizard";
-    return "Spock";
+    if (letter === 'sp') return "Spock";
 }
 
-// Update the score when the player wins
-function win(userChoice, computerChoice) {
-    const userChoice_div = document.getElementById(userChoice);
+// Update score when user wins
+function win(usersChoice, computersChoice)
+{
+    const usersChoice_div = document.getElementById(usersChoice);
     userScore++;
-    userScore_span.innerHTML = userScore;
-    computerScore_span.innerHTML = computerScore;
+    userScore_tab.innerHTML = userScore;
+    computerScore_tab.innerHTML = computerScore;
 
     
-    // Throw a message with the selections and if the 5th win is reached will throw the end game screen too
-    if (userScore < 5) {
-        // add next to user and computer selection a small word with green color for user and red for computer
-        result_p.innerHTML = `${convertToWord(userChoice)}<sub id ="subUser"> user</sub> beats ${convertToWord(computerChoice)}<sub id ="subComp"> comp</sub>. You win! 😄 `;
-    } else if(userScore === 5){
+    // Each selection will give a message and if the 10th win is reached the end game screen will show
+    if (userScore < 10) {
+        result_p.innerHTML = `${LetterToWord(usersChoice)}<sub id ="subUser"> user</sub> beats ${LetterToWord(computersChoice)}<sub id ="subComp"> comp</sub>. You win!`;
+    } else if(userScore === 10){
         txtEndTitle.innerHTML=`GAME OVER!`;
-        txtEndMessage.innerHTML=`You Win 🎉`;
+        txtEndMessage.innerHTML=`You Win!`;
         endGame();
     }
-    // Add a green glow effect to the winning selection icon
-    userChoice_div.classList.add('green-glow');
-    setTimeout(function() {userChoice_div.classList.remove('green-glow'); }, 300 );
+    // Green glow effect to the winning selection
+    usersChoice_div.classList.add('green-glow');
+    setTimeout(function() {usersChoice_div.classList.remove('green-glow'); }, 300 );
 }
 
-// Update the score when the computer wins
-function lose(userChoice, computerChoice) {
-    const userChoice_div = document.getElementById(userChoice);
-    computerScore++;
-    userScore_span.innerHTML = userScore;
-    computerScore_span.innerHTML = computerScore;
+// Update score when computer wins
+function lose(usersChoice, computersChoice)
 
-    // Throw a message with the selections and if the 5th win has been reached will throw the end game screen too
-    if (computerScore < 5){
-        // add next to user and computer selection a small word with green color for user and red for computer 
-        result_p.innerHTML = `${convertToWord(computerChoice)}<sub id ="subComp"> comp</sub> beats ${convertToWord(userChoice)}<sub id ="subUser"> user</sub>. You lose 😢 `;
-    } else if(computerScore === 5){
-        txtEndTitle.innerHTML=`GAME OVER!`;
-        txtEndMessage.innerHTML=`You lose 😔`;
-        endGame();
-    }
+// If user and computer select the same option 
+function draw(usersChoice, computersChoice)
 
-    // Add a red glow effect to the losing selection icon
-    userChoice_div.classList.add('red-glow');
-    setTimeout(function() {userChoice_div.classList.remove('red-glow'); }, 300 );
-}
+// Check all selections and determine the winning, losing and tie results
+function game(usersChoice)
 
-// When computer and player selection is the same throws a message and does not update the score
-function draw(userChoice, computerChoice) {
-    const userChoice_div = document.getElementById(userChoice);
-    // add next to user and computer selection a small word with green color for user and red for computer
-    result_p.innerHTML = `${convertToWord(userChoice)}<sub id ="subUser"> user</sub> equals ${convertToWord(computerChoice)}<sub id ="subComp"> comp</sub>. It's a draw 😐 `;
+// End game screen 
+function endGame() 
 
-    // Adds a yellow glow effect to the selection
-    userChoice_div.classList.add('yellow-glow');
-    setTimeout(function() {userChoice_div.classList.remove('yellow-glow'); }, 300 );
-}
-
-// Match all the selections and determine the winning, losing and tie outcomes
-function game(userChoice) {
-    const computerChoice = getComputerCoice();
-    switch(userChoice + computerChoice) {
-        case "rs": 
-        case "rl":
-        case "pr":
-        case "pv":
-        case "sp":
-        case "sl":
-        case "lp":
-        case "lv":
-        case "vr":
-        case "vs":
-            win(userChoice, computerChoice);
-            break;
-        case "rp":
-        case "rv":
-        case "ps":
-        case "pl":
-        case "sr":
-        case "sv":
-        case "lr":
-        case "ls":
-        case "vp":
-        case "vl":
-            lose(userChoice, computerChoice);
-            break;
-        case "rr":
-        case "pp":
-        case "ss":
-        case "ll":
-        case "vv":
-            draw(userChoice, computerChoice);
-            break;
-    }
-}
-
-// Remove the Start Game screen 
-function startGame() {
-    document.getElementById('introScreen').style.display = 'none';
-}
-
-// Show the end game screen 
-function endGame() {
-    document.getElementById('endScreen').style.display = 'block';
-}
-
-// Remove the end game screen, reset the result message and reset the scores
-function replay() {
-    document.getElementById('endScreen').style.display = 'none';
-    result_p.innerHTML = "Make your choice";
-    restartScores();
-}
-  
-// Reset the scores to 0
-function restartScores() {
-
-    userScore = 0;
-    computerScore = 0;
-    userScore_span.innerHTML = userScore;
-    computerScore_span.innerHTML = computerScore;
-
-}
-  
-// Assign a specific letter to a specific icon after user click
-function main() {
-
-    rockDiv.addEventListener('click', () => game("r"));
-
-    paperDiv.addEventListener('click', () => game("p"));
-
-    scissorsDiv.addEventListener('click', () => game("s"));
-
-    lizardDiv.addEventListener('click', () => game("l"));
-
-    spockDiv.addEventListener('click', () => game("v"));
-
-    document.getElementById('endScreen').style.display = 'none';
-    
-}
-
-main();
+// Remove the end game message, reset the score message and score
+function replay()
