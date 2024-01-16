@@ -148,3 +148,9 @@ function main() {
     document.getElementById('endScreen').style.display = 'none';
     
 }
+
+function start() {
+    document.getElementById("startScreen").classList.add("hide");
+    document.getElementById("gameScreen").classList.remove("hide");
+}
+main()
