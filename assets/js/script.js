@@ -6,7 +6,6 @@ let computerScore = 0;
 const userScore_span = document.getElementById('win');
 const computerScore_span = document.getElementById('lose');
 const result_p = document.querySelector('.result > p');
-
 // Game icons assigned
 const rockDiv = document.getElementById('r');
 const paperDiv = document.getElementById('p');
@@ -16,6 +15,8 @@ const spockDiv = document.getElementById('v');
 // End game screen section
 let EndTitle = document.getElementById('EndTitle');
 let EndMessage = document.getElementById('EndMessage');
+let startBtn = document.querySelector('.btnStart');
+startBtn.addEventListener("click", start);
 // Computers choice
 function ComputerSelection()
 { 
@@ -23,7 +24,6 @@ function ComputerSelection()
     const randomNumber = Math.floor(Math.random() * 5);
     return choices[randomNumber];
 }
-
 // Convert letter to word
 function LetterToWord(letter)
 {
@@ -148,9 +148,8 @@ function main() {
     document.getElementById('endScreen').style.display = 'none';
     
 }
-
 function start() {
     document.getElementById("startScreen").classList.add("hide");
     document.getElementById("gameScreen").classList.remove("hide");
+    main()
 }
-main()

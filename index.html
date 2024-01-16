@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +7,11 @@
     <link rel="stylesheet" href="assets\css\style.css">
     <link rel="stylesheet" href="rules.html">
     <title>Rock, Paper, Scissors, Lizard, Spock</title>
+
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
 </head>
 <body>
 <!--Start game page-->
@@ -18,15 +24,15 @@
     </header>
  
    <main>
+    <section id="startScreen">
     <!--Start game button-->
     <div id="start-game-btn">
-        <div class="center">
-        </div>
-        <button class="btnStart" onclick="startGame()">
+        <button class="btnStart">
             <span>START GAME</span>
          </button>
     </div>
-
+    </section>
+    <section id="gameScreen" class="hide">
      <!-- End Game Page -->
      <div id="endScreen">
         <div id="endScreenContent">
@@ -36,7 +42,7 @@
             <div id="btnReplay" class="btn" onclick="replay()">NEW GAME</div>
         </div>
     </div>
-
+    </section>
     <!--Game zone and result-->
     <div class="game-zone">
       <div class="result">
@@ -69,7 +75,6 @@
         <div class="score">
             <p class="scores">USER <span id="win"> 0</span></p>
             <p class="scores">COMPUTER <span id="lose"> 0</span></p>
-
         </div>
     </main>
           
@@ -78,7 +83,6 @@
     <div class="container">
         <a class="btn" href="rules.html">Rules</a>
     </div>
-
 
     <script src="assets\js\script.js"></script>
 </body>
