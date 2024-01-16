@@ -76,7 +76,10 @@ h1 {
 .score {
     display: inline-block;
     padding: 60px;
-   
+    transform: translate(270%, 20%);
+}
+.scores {
+    font-size: 150%;
 }
 .score-area {
     margin: auto;
@@ -101,30 +104,27 @@ h1 {
     height: 400px;
     position: absolute;
     left: 50%;
-    top: 30%;
+    top: 22%;
     transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.center {
-    width: 180px;
-    height: 60px;
-    position: absolute;
-}
   
 .btnStart {
-    width: 150px;
-    height: 50px;
+    width: 180px;
+    height: 70px;
+    font-size: 20px;
+    color: #ffffff;
     cursor: pointer;
     background: transparent;
     border: 1px solid #000407;
     outline: none;
 }
 /* Button animation */
-#btnStart:hover {
+.btnStart:hover {
     cursor: pointer;
-    background: #da4f4f;
+    background: #830808;
 }
 /* End screen button */
 #btnReplay {
@@ -180,5 +180,26 @@ h1 {
 .hide{
     display: none;
 }
-/* Media Queries large or landscape phones (576px and up)*/ 
-@media screen and (min-width: 576px)
+
+@media screen and (min-width: 576px) {
+    {
+        /* Push main content down to accommodate larger header */
+        margin-top: 79px;
+    }
+}
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+  /* Header */
+  #Header {
+    display: block;
+    position: relative;
+    box-shadow: none;
+    width: fit-content;
+    padding-right: 1rem;
+}
+/* Main content */
+main {
+    /* Push main content down to accommodate larger header */
+    margin-top: 79px;
+}
+}

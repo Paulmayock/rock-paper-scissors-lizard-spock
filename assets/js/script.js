@@ -43,7 +43,7 @@ function win(usersChoice, computersChoice)
     
     // Each selection will give a message and if the 10th win is reached the end game screen will show
     if (userScore < 10) {
-        result_p.innerHTML = `${LetterToWord(usersChoice)}<sub id ="subUser"> user</sub> beats ${LetterToWord(computersChoice)}<sub id ="subComp"> comp</sub>. You win!`;
+        result_p.innerHTML = `${LetterToWord(usersChoice)}<sub id ="subUser"></sub> beats ${LetterToWord(computersChoice)}<sub id ="subComp"></sub>. You win!`;
     } else if(userScore === 10){
         EndTitle.innerHTML=`GAME OVER!`;
         EndMessage.innerHTML=`You Win!`;
@@ -62,7 +62,7 @@ function lose(usersChoice, computersChoice)
     computerScore_span.innerHTML = computerScore;
     // Each selection will give a message and if the 10th win is reached the end game screen will show
     if (computerScore < 10){
-        result_p.innerHTML = `${LetterToWord(computersChoice)}<sub id ="subComp"> comp</sub> beats ${LetterToWord(usersChoice)}<sub id ="subUser"> user</sub>. You lose`;
+        result_p.innerHTML = `${LetterToWord(computersChoice)}<sub id ="subComp"></sub> beats ${LetterToWord(usersChoice)}<sub id ="subUser"></sub>. You lose`;
     } else if(computerScore === 10){
         EndTitle.innerHTML=`GAME OVER!`;
         EndMessage.innerHTML=`You lose`;
@@ -76,7 +76,7 @@ function lose(usersChoice, computersChoice)
 function draw(usersChoice, computersChoice)
 {
     const usersChoice_div = document.getElementById(usersChoice);
-    result_p.innerHTML = `${LetterToWord(usersChoice)}<sub id ="subUser"> user</sub> equals ${LetterToWord(computersChoice)}<sub id ="subComp"> comp</sub>. It's a draw`;
+    result_p.innerHTML = `${LetterToWord(usersChoice)}<sub id ="subUser"></sub> equals ${LetterToWord(computersChoice)}<sub id ="subComp"></sub>. It's a draw`;
     //The choice is highlighted by a yellow glow
     usersChoice_div.classList.add('yellow-glow');
     setTimeout(function() {usersChoice_div.classList.remove('yellow-glow'); }, 300 );
