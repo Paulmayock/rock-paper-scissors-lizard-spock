@@ -76,7 +76,7 @@ h1 {
 .score {
     display: inline-block;
     padding: 60px;
-    transform: translate(270%, 20%);
+   
 }
 .scores {
     font-size: 150%;
@@ -88,13 +88,20 @@ h1 {
     color: white;
     text-align: center;
 }
+#scoreboard {
+    text-align: center;
+    
+}
+#weapon {
+    font-size: 35px;
+}
 #win {
-    color: rgb(32, 252, 24);
+    color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: 25px; 
 }
 #lose {
-    color: rgba(250, 39, 2, 0.993);
+    color: rgba(255, 255, 255, 0.993);
     font-weight: bold;
     font-size: 25px;
 }
