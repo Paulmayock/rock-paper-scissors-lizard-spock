@@ -181,6 +181,26 @@ h1 {
     display: none;
 }
 
+/*rules html styling*/
+#gameRules {
+    list-style-type: none;
+  }
+
+#howTo {
+        width: 75%;
+        text-align: center;
+        margin: auto;
+        padding: 10px;
+}
+
+#playRules {
+    font-size: 50px;
+}
+
+#howToPlay {
+    font-size: 20px;
+}
+
 @media screen and (min-width: 576px) {
     {
         /* Push main content down to accommodate larger header */
