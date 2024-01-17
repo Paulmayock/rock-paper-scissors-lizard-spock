@@ -2,21 +2,25 @@
 // Starting score for user and computer
 let userScore = 0;
 let computerScore = 0;
+
 // Score section and game messages 
 const userScore_span = document.getElementById('win');
 const computerScore_span = document.getElementById('lose');
 const result_p = document.querySelector('.result > p');
+
 // Game icons assigned
 const rockDiv = document.getElementById('r');
 const paperDiv = document.getElementById('p');
 const scissorsDiv = document.getElementById('s');
 const lizardDiv = document.getElementById('l');
 const spockDiv = document.getElementById('v');
+
 // End game screen section
 let EndTitle = document.getElementById('EndTitle');
 let EndMessage = document.getElementById('EndMessage');
 let startBtn = document.querySelector('.btnStart');
 startBtn.addEventListener("click", start);
+
 // Computers choice
 function ComputerSelection()
 { 
@@ -24,6 +28,7 @@ function ComputerSelection()
     const randomNumber = Math.floor(Math.random() * 5);
     return choices[randomNumber];
 }
+
 // Convert letter to word
 function LetterToWord(letter)
 {
@@ -33,6 +38,7 @@ function LetterToWord(letter)
     if (letter === 'l') return "Lizard";
       return "Spock";
 }
+
 // Update score when user wins
 function win(usersChoice, computersChoice)
 {
@@ -52,6 +58,7 @@ function win(usersChoice, computersChoice)
     // Green glow effect to the winning selection
     usersChoice_div.classList.add('green-glow');
     setTimeout(function() {usersChoice_div.classList.remove('green-glow'); }, 300 );
+
 }
 // Update score when computer wins
 function lose(usersChoice, computersChoice)
@@ -72,6 +79,7 @@ function lose(usersChoice, computersChoice)
      usersChoice_div.classList.add('red-glow');
      setTimeout(function() {usersChoice_div.classList.remove('red-glow'); }, 300 );
  }
+
 // If user and computer select the same choice 
 function draw(usersChoice, computersChoice)
 {
@@ -81,6 +89,7 @@ function draw(usersChoice, computersChoice)
     usersChoice_div.classList.add('yellow-glow');
     setTimeout(function() {usersChoice_div.classList.remove('yellow-glow'); }, 300 );
 }
+
 // Check all selections and determine the winning, losing and tie results
 function game(usersChoice)
 {
@@ -119,11 +128,16 @@ function game(usersChoice)
             break;
     }
 }
+
 // End game screen 
 function endGame() 
 {
     document.getElementById('endScreen').style.display = 'block';
 }
+
+//
+document.getElementById("btnReplay").addEventListener("click", replay);
+
 // Remove the end game message, reset the score message and score
 function replay()
 {
@@ -131,6 +145,7 @@ function replay()
     result_p.innerHTML = "Make your choice";
     resetScores();
 }
+
 // Reset user and computer scores to 0
 function resetScores() {
     userScore = 0;
@@ -138,6 +153,7 @@ function resetScores() {
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
 }
+
 // Assign a specific letter to a specific icon after user click
 function main() {
     rockDiv.addEventListener('click', () => game("r"));
@@ -148,6 +164,7 @@ function main() {
     document.getElementById('endScreen').style.display = 'none';
     
 }
+
 function start() {
     document.getElementById("startScreen").classList.add("hide");
     document.getElementById("gameScreen").classList.remove("hide");

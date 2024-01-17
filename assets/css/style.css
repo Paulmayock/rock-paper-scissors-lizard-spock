@@ -191,6 +191,7 @@ h1 {
 /*rules html styling*/
 #gameRules {
     list-style-type: none;
+    padding: 0;
   }
 
 #howTo {
@@ -233,6 +234,7 @@ main {
 
 @media screen and (max-width: 400px) {
     #Header {
+        font-size: 50px;
         display: block;
         position: relative;
         box-shadow: none;
