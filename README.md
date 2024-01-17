@@ -16,3 +16,5 @@ The user goals are as follows:
 - As a user I want the game to tally the total scores to show who won.
 
 ## Design
+ - Home page 
+ ![Home page](readMeImages\Home screen.PNG)
