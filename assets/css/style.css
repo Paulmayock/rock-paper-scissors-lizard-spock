@@ -208,7 +208,7 @@ h1 {
     font-size: 20px;
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 576px) 
     {
         /* Push main content down to accommodate larger header */
         margin-top: 79px;
@@ -229,4 +229,17 @@ main {
     /* Push main content down to accommodate larger header */
     margin-top: 79px;
 }
+}
+
+@media screen and (max-width: 400px) {
+    #Header {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+    #startScreen{
+        margin-top: 250px;  
+    }
 }
