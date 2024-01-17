@@ -18,35 +18,35 @@ The user goals are as follows:
 ## Design
  - Home page 
 
- ![Home page](readMeImages\homeScreen.PNG)
+![Home page](readMeImages/home-screen.png)
 
  - Rules page
 
- ![Rules page](readMeImages\rulesPage.PNG)
+ ![Rules page](readMeImages/rules-page.png)
 
  - Start button hover
 
- ![Start button](readMeImages\startHover.PNG)
+ ![Start button](readMeImages/hover-option.png)
 
  - Choice option
 
- ![Choice option](readMeImages\hoverOption.PNG)
+ ![Choice option](readMeImages/hover-option.png)
 
  - Winning choice
 
- ![Winning choice](readMeImages\winningChoice.PNG)
+ ![Winning choice](readMeImages/winning-choice.png)
 
  - Losing choice
 
- ![Losing choice](readMeImages\losingChoice.PNG)
+ ![Losing choice](readMeImages/losing-choice.png)
 
  - Equal choice
 
- ![Equal choice](readMeImages\equalChoice.PNG)
+ ![Equal choice](readMeImages/equal-choice.png)
 
  - Start hover
 
- ![Start hover](readMeImages\startHover.PNG)
+ ![Start hover](readMeImages/start-hover.png)
 
 
 ### Color
