@@ -25,5 +25,30 @@ The user goals are as follows:
  ![Rules page](readMeImages\rulesPage.PNG)
 
  - Start button hover
- 
+
  ![Start button](readMeImages\startHover.PNG)
+
+ - Choice option
+
+ ![Choice option](readMeImages\hoverOption.PNG)
+
+ - Winning choice
+
+ ![Winning choice](readMeImages\winningChoice.PNG)
+
+ - Losing choice
+
+ ![Losing choice](readMeImages\losingChoice.PNG)
+
+ - Equal choice
+
+ ![Equal choice](readMeImages\equalChoice.PNG)
+
+ - Start hover
+
+ ![Start hover](readMeImages\startHover.PNG)
+
+
+### Color
+
+For the main body color a red plaster color was choose the text color was white with a hint of black shadow for the heading. The hover color for the start button updates to a richer red color while for the rules and home page button a white highlight was choose. 
