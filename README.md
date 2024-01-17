@@ -17,8 +17,13 @@ The user goals are as follows:
 
 ## Design
  - Home page 
+
  ![Home page](readMeImages\homeScreen.PNG)
+
  - Rules page
+
  ![Rules page](readMeImages\rulesPage.PNG)
+
  - Start button hover
+ 
  ![Start button](readMeImages\startHover.PNG)
