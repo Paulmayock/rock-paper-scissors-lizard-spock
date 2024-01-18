@@ -5,6 +5,8 @@ The game can be played on any device.
 
 Multi device image
 
+![Multi device screen](docs/Multiscreen.png)
+
 Link to the website https://paulmayock.github.io/rock-paper-scissors-lizard-spock/
 
 ## User Experience
@@ -105,10 +107,71 @@ HTML, CSS, Java-script.
 
 Google Fonts: “Barlow Semi Condensed with sans-serif” imported externally into the CSS file. 
 
-
 Am I Responsive?: Used to test out how friendly the site is across various screen sizes. The responsive nature of the site is shown at the top of this document in the mock-up.
-
 
 Git-Hub / Code Anywhere / Visual Code Studio: Git-hub is used to store the project files and is used to host the site. Code Anywhere and Visual code were used as the IDE to code the website.
 
 Google Web Developer Tools: Google Chrome was used as the browser for the development of this website game. The inbuilt Developer Tools were used to understand the HTML, CSS and Java Script workings in real-time.
+
+https://techsini.com/multi-mockup/index.php 
+
+Used to create a multi device user image which you can see at the start of the readme.
+
+https://openclipart.org/detail/325665/rock-paper-scissors-lizard-spock 
+
+Used to create the images of each option for the game.
+
+https://www.wikihow.com/Play-Rock-Paper-Scissors-Lizard-Spock
+
+Used to explain the rules of the game
+
+https://validator.w3.org/nu/#textarea
+
+Used to validate HTML
+
+https://jigsaw.w3.org/css-validator/validator
+
+Used to validate CSS
+
+http://jshint.com/
+
+Used to validate Javascript
+
+## Validator testing
+
+- HTML
+
+No errors were returned when passing through W3C validator. The rules page did show 2 warnings but I was aware of these and wanted to keep the HTML on this page as is.
+
+![HTML](docs/HTML.png)
+
+- CSS
+
+Unfortunately an error was received when passing the CSS through CSS validator
+
+![CSS](docs/CSS.png)
+
+- Javascipt
+
+No errors were returned when passing through JShint validator. Warnings are currently present, however these are regarding ES6 Compatibility; I'm aware of these and I am satisfied these can be dismissed.
+
+- Accessibilty
+
+Lighthouse was used to test this and confirm colors and fonts are easily read.
+
+![Lighthouse](docs/lighthouse.png)
+
+## Testing
+
+Testing was carried out on the website to ensure correct functionality.
+
+- How to play the game and rules:
+
+The home screen shows the start button and the options to choose when playing the game.
+Below the options are the user score and computer score.
+Below the score is a link for the rules page. When you click the rules page the page brings you to another page showing hwo to play and the rules.
+At the bottom of the rules page is a home button to bring you back to the home page.
+When you click the start button on the home page the game begins with the message above the option to choose your weapon.
+When you click an option the game calculates if your option beats the computer option. If your option beats the computer option the message shows for example "Scissors beats paper. You Win!". The winning option also gives a green glow on the border for easy visual to show your option won. 
+If your option loses to the computer option the message shows for example "Scissors beats paper. You lose". The losing option also gives a red glow on the border for easy visual to show your option lost. If your option is equal to the computer option the message shows for example "Scissors equals scissors. It's a draw". The equal option also gives a yellow glow on the border for easy visual to show your option equals the computer.
+The first to 10 wins. If the user wins a message will show "Game over! you win!. If the user loses a message will show "Game over! you lose A selection box will show to give the user the option to start a new game. When the user clicks on the new game button a new game will begin.
