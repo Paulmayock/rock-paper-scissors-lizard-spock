@@ -48,7 +48,67 @@ The user goals are as follows:
 
  ![Start hover](docs/start-hover.png)
 
+ - New game
+
+ ![New game](docs/newGame.png)
+
 
 ### Color
 
-For the main body color a red plaster color was choose the text color was white with a hint of black shadow for the heading. The hover color for the start button updates to a richer red color while for the rules and home page button a white highlight was choose. 
+For the main body color a red plaster color was choose the text color was white with a hint of black shadow for the heading. The hover color for the start button updates to a richer red color while for the rules and home page button a white highlight was choose. When the user hovers over each option a green glow will surround the option. When the player chooses an option which beats the computer the option will give another green glow on the border for the winning option. When the player chooses an option which is beaten by the computer the option glows red on the border. When the user and computer choose the sam option the the option gives a yellow border glow to show it is a draw.
+
+### Fonts
+
+The main font used was a Barlow Semi Condensed with sans-serif.
+
+## Features
+
+The home page consists on the start button which must be pressed to start the game. It also shows the options to to choose when playing the games and there is a link at the bottom of the page when clicked on brings you to the rules.
+
+![Home screen](docs/home-screen.png)
+
+The rules page shows the user how to play the game and the rules to the game. The rules outlines which options beats which option.
+
+![Rules page](docs/rules-page.png)
+
+The start button when clicked on starts the game. The game cannot be started until this button is clicked. The button disappears once clicked.
+
+![start game button](docs/start-hover.png)
+
+When the user chooses a winning option the option glows a green border for a split second with the message stating the option beats the losing option, you win.
+
+![winning choice](docs/winning-choice.png)
+
+When the user chooses a losing option the option gives a red border glow for a split second with the message stating the option, you lose.
+
+![losing choice](docs/losing-choice.png)
+
+When the user chooses a option which matches the computer the option chosen gives a yellow border glow for a split second stating option equals option, it's a draw.
+
+![draw](docs/equal-choice.png)
+
+When the user gets to 10 wins the user wins the game with the response Game over, You win and gives the option to start a new game.
+
+![winning game](docs/winningGame.PNG)
+
+When the user loses the game and the computer gets to 10 wins first the response given is game over, you loose and gives the option to start a new game.
+
+![losing game](docs/youLose.PNG)
+
+## Technologies used
+
+### Coding languages
+
+HTML, CSS, Java-script.
+
+### External resource
+
+Google Fonts: “Barlow Semi Condensed with sans-serif” imported externally into the CSS file. 
+
+
+Am I Responsive?: Used to test out how friendly the site is across various screen sizes. The responsive nature of the site is shown at the top of this document in the mock-up.
+
+
+Git-Hub / Code Anywhere / Visual Code Studio: Git-hub is used to store the project files and is used to host the site. Code Anywhere and Visual code were used as the IDE to code the website.
+
+Google Web Developer Tools: Google Chrome was used as the browser for the development of this website game. The inbuilt Developer Tools were used to understand the HTML, CSS and Java Script workings in real-time.
