@@ -165,13 +165,66 @@ Lighthouse was used to test this and confirm colors and fonts are easily read.
 
 Testing was carried out on the website to ensure correct functionality.
 
-- How to play the game and rules:
+### How to play the game and rules:
 
 The home screen shows the start button and the options to choose when playing the game.
+
 Below the options are the user score and computer score.
-Below the score is a link for the rules page. When you click the rules page the page brings you to another page showing hwo to play and the rules.
+
+Below the score is a link for the rules page. When the user click the rules page the page brings you to another page showing hwo to play and the rules.
+
 At the bottom of the rules page is a home button to bring you back to the home page.
-When you click the start button on the home page the game begins with the message above the option to choose your weapon.
-When you click an option the game calculates if your option beats the computer option. If your option beats the computer option the message shows for example "Scissors beats paper. You Win!". The winning option also gives a green glow on the border for easy visual to show your option won. 
+
+When the user click the start button on the home page the game begins with the message above the option to choose your weapon.
+
+When the user clicks an option the game calculates if your option beats the computer option. If your option beats the computer option the message shows for example "Scissors beats paper. You Win!".
+
+The winning option also gives a green glow on the border for easy visual to show your option won. 
+
 If your option loses to the computer option the message shows for example "Scissors beats paper. You lose". The losing option also gives a red glow on the border for easy visual to show your option lost. If your option is equal to the computer option the message shows for example "Scissors equals scissors. It's a draw". The equal option also gives a yellow glow on the border for easy visual to show your option equals the computer.
+
 The first to 10 wins. If the user wins a message will show "Game over! you win!. If the user loses a message will show "Game over! you lose A selection box will show to give the user the option to start a new game. When the user clicks on the new game button a new game will begin.
+
+### Manual testing
+
+**Home page**
+- Page is displayed as expected
+- Instruction to click the start game button displayed as expected
+- Scores are both 0
+- Link to click rules button is as expected and 
+
+**Rules page**
+- How to play and rules are shown in the correct order.
+- Home button at the bottom of the page brings the user back to the home screen.
+
+**Start button clicked**
+- When the start button is clicked, the game begins.
+- When the user selects and option the option lights green for win, red for a loss and yellow for a draw.
+- A message will either what option you picked and if it beat the computer.
+- The correct message appears if the user chooses a winning option, losing option or an equal option.
+- The option chosen glows correctly matching each option. Green for win, red for loss and yellow for draw.
+- The score adds up correctly for each go, 1 point for win and does not add to the score if the option chosen is equal to the computer.
+- The first to 10 wins and will either show the user wins with a message, "Game over! you win! of the user wins and "Game over! you lose if the user loses.
+- Below this message there is an option for the user to start a new game.
+
+## Bugs
+
+After codeanywhere had issues for a number of days I decided to use visual code for writing up the code for the project. When copying the file paths for images the slash was incorrect as it would copy a backslash instead of a forward slash. Due to this the images would not display correctly when the website was live. after some research I found this issue and corrected it.
+
+## Improvements
+
+Some improvements I would have liked to make to the website.
+
+- Have the "choose your weapon" and options not visible until the start button is clicked.
+- Option to end the game while playing the game
+- Option to quit the game when the game has ended instead of only the option to start new game.
+
+## Deployment
+
+This project was deployed using Visual code and updated were committed to Github to keep track of changes. The website is deployed using Github pages.
+
+## Credit
+
+- Code Institute's love maths was used for revision of how to write javascript for my project.
+- Thank you to my mentor for the assistance given.
+- Thank you to my partner for the many hours of patience and support.
