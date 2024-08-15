@@ -207,6 +207,11 @@ body {
     /* Push main content down to accommodate larger header */
     margin-top: 40px;
   }
+  
+  .choice {
+    max-width: 50%;
+    max-height: 50%;
+  }
 }
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
@@ -222,6 +227,10 @@ body {
   main {
     /* Push main content down to accommodate larger header */
     margin-top: 79px;
+  }
+  .choice {
+    max-width: 50%;
+    max-height: 50%;
   }
 }
 
