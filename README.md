@@ -223,6 +223,16 @@ Some improvements I would have liked to make to the website.
 
 This project was deployed using Visual code and updated were committed to Github to keep track of changes. The website is deployed using Github pages.
 
+### Deploy from Github
+
+- Log into your GitHub repository
+- Click 'Settings' in the main Repository menu
+- Click 'Pages' from the left-hand side navigation menu
+- click the "Branch" button and change from 'None' to 'Main'
+- The page should automatically refresh with a url displayed
+- Test the link by clicking on the url
+
+
 ## Credit
 
 - Code Institute's love maths was used for revision of how to write javascript for my project.

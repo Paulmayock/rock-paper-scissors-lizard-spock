@@ -146,6 +146,7 @@ body {
     background: #74053d;
   }
   .container {
+    font-size: 150%;
     color: white;
     text-align: center;
     margin-top: 40px;
@@ -153,7 +154,7 @@ body {
   }
   .btn:hover {
     cursor: pointer;
-    background: #ffffff;
+    color :#ffffff
   }
   /* End game screen */
   #endScreen {
@@ -198,7 +199,7 @@ body {
   }
 
   #playRules {
-    font-size: 50px;
+    font-size: 75px;
   }
 
   #howToPlay {
