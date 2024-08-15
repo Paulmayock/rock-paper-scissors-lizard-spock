@@ -18,6 +18,11 @@ The user goals are as follows:
 - As a user I want the game to tally the total scores to show who won.
 
 ## Design
+
+### Wireframe
+
+![Wireframe](docs/project-2-wireframe.png)
+
  - Home page 
 
 ![Home page](docs/home-screen.png)
