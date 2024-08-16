@@ -192,25 +192,7 @@ The first to 10 wins. If the user wins a message will show "Game over! you win!.
 
 ### Manual testing
 
-**Home page**
-- Page is displayed as expected
-- Instruction to click the start game button displayed as expected
-- Scores are both 0
-- Link to click rules button is as expected and brings you to the rules page.
-
-**Rules page**
-- How to play and rules are shown in the correct order.
-- Home button at the bottom of the page brings the user back to the home screen.
-
-**Start button clicked**
-- When the start button is clicked, the game begins.
-- When the user selects and option the option lights green for win, red for a loss and yellow for a draw.
-- A message will either what option you picked and if it beat the computer.
-- The correct message appears if the user chooses a winning option, losing option or an equal option.
-- The option chosen glows correctly matching each option. Green for win, red for loss and yellow for draw.
-- The score adds up correctly for each go, 1 point for win and does not add to the score if the option chosen is equal to the computer.
-- The first to 10 wins and will either show the user wins with a message, "Game over! you win! of the user wins and "Game over! you lose if the user loses.
-- Below this message there is an option for the user to start a new game.
+![Manual testing sheet](docs/testing.png)
 
 ## Bugs
 
