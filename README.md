@@ -102,6 +102,14 @@ When the user loses the game and the computer gets to 10 wins first the response
 
 ![losing game](docs/youLose.PNG)
 
+### Mobile View
+
+![home page](docs/small-screen-home.png)
+
+![rules page](docs/small-screen-rules.png)
+
+![small screen](docs/small-screen-game.png)
+
 ## Technologies used
 
 ### Coding languages
