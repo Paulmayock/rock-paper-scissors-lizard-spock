@@ -104,9 +104,9 @@ When the user loses the game and the computer gets to 10 wins first the response
 
 ### Mobile View
 
-![home page](docs/small-screen-home.png)
+![home page](docs/small-screenhome.png)
 
-![rules page](docs/small-screen-rules.png)
+![rules page](docs/small-screenrules.png)
 
 ![small screen](docs/small-screen-game.png)
 
