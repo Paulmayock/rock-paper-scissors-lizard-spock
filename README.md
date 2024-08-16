@@ -27,13 +27,13 @@ The user goals are as follows:
 
 ![Home page](docs/home-screen.png)
 
+ - Start game
+
+ ![Start game](docs/start-game.png)
+
  - Rules page
 
  ![Rules page](docs/rules-page.png)
-
- - Start button hover
-
- ![Rules hover](docs/rules-hover.png)
 
  - Choice option
 
@@ -51,13 +51,13 @@ The user goals are as follows:
 
  ![Equal choice](docs/equal-choice.png)
 
- - Start hover
+ - You win
 
- ![Start hover](docs/start-hover.png)
+![You win](docs/you-win.png)
 
- - New game
+ - You lose
 
- ![New game](docs/newGame.png)
+![You lose](docs/you-lose.png)
 
 
 ### Color
