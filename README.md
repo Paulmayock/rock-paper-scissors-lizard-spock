@@ -61,9 +61,15 @@ The user goals are as follows:
 
 ### Mobile View
 
+ - Home page
+
 ![home page](docs/small-screenhome.png)
 
+ - Rules
+
 ![rules page](docs/small-screenrules.png)
+
+ - Game screen
 
 ![small screen](docs/small-screengame.png)
 
