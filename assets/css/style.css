@@ -22,7 +22,7 @@ body {
   min-height: 100vh;
   position: relative;
   background: #b65e5e;
-
+}
   /* Heading */
   header {
     padding: 2px;
@@ -68,7 +68,6 @@ body {
   }
   .score {
     display: inline-block;
-    padding: 60px;
   }
   .scores {
     font-size: 150%;
@@ -98,12 +97,6 @@ body {
   }
   /* Start button rules */
   #start-game-btn {
-    width: 400px;
-    height: 400px;
-    position: absolute;
-    left: 50%;
-    top: 22%;
-    transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -143,8 +136,8 @@ body {
     font-size: 150%;
     color: white;
     text-align: center;
-    margin-top: 40px;
-    height: 100px;
+    margin-top: 20px;
+    height: 50px;
   }
   .btn:hover {
     cursor: pointer;
@@ -196,20 +189,16 @@ body {
     font-size: 20px;
   }
 
-  @media screen and (min-width: 576px) {
-    /* Push main content down to accommodate larger header */
-    margin-top: 40px;
-  }
   .choice {
     max-width: 50%;
     max-height: 50%;
     margin: 0 10px;
   }
-}
+
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
   /* Header */
-  #Header {
+  #header {
     display: block;
     position: relative;
     box-shadow: none;
@@ -229,16 +218,13 @@ body {
 }
 
 @media screen and (max-width: 400px) {
-  #Header {
+  #header {
     font-size: 50px;
     display: block;
     position: relative;
     box-shadow: none;
     width: fit-content;
     padding-right: 1rem;
-  }
-  #startScreen {
-    margin-top: 250px;
   }
   .choice {
     max-width: 50%;
