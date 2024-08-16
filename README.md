@@ -214,7 +214,7 @@ The first to 10 wins. If the user wins a message will show "Game over! you win!.
 
 ## Bugs
 
-After codeanywhere had issues for a number of days I decided to use visual code for writing up the code for the project. When copying the file paths for images the slash was incorrect as it would copy a backslash instead of a forward slash. Due to this the images would not display correctly when the website was live. after some research I found this issue and corrected it.
+After codeanywhere had issues for a number of days I decided to use visual code for writing up the code for the project. When copying the file paths for images the slash was incorrect as it would copy a backslash instead of a forward slash. Due to this the images would not display correctly when the website was live. After some research I found this issue and corrected it.
 
 ## Improvements
 

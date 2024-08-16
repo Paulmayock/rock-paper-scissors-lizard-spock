@@ -1,103 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="assets/css/style.css"/>
-    <link rel="stylesheet" href="rules.html"/>
-    <title>Rock, Paper, Scissors, Lizard, Spock</title>
-    
 
-    <!--Favicon-->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/favicon/favicon-16x16.png"
-    />
-  </head>
-  <body>
-    <!--Start game page-->
-    <header>
-      <div id="mainScreenContent">
-        <div id="Logo">
-          <h1>Rock Paper Scissors Lizard Spock</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="rules.html" />
+  <title>Rock, Paper, Scissors, Lizard, Spock</title>
+
+
+  <!--Favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+</head>
+
+<body>
+  <!--Start game page-->
+  <header>
+    <div id="mainScreenContent">
+      <div id="Logo">
+        <h1>Rock Paper Scissors Lizard Spock</h1>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div id="startScreen">
+      <!--Start game button-->
+      <div id="start-game-btn">
+        <button class="btnStart">
+          <span>START GAME</span>
+        </button>
+      </div>
+    </div>
+    <section id="gameScreen" class="hide">
+      <!-- End Game Page -->
+      <div id="endScreen">
+        <div id="endScreenContent">
+          <h2 id="EndTitle">GAME OVER!</h2>
+          <br />
+          <h2 id="EndMessage">You Win, Lose</h2>
+          <div id="btnReplay" class="btn" onclick="replay()">NEW GAME</div>
         </div>
       </div>
-    </header>
-
-    <main>
-      <div id="startScreen">
-        <!--Start game button-->
-        <div id="start-game-btn">
-          <button class="btnStart">
-            <span>START GAME</span>
-          </button>
-        </div>
-    </div>
-      <section id="gameScreen" class="hide">
-        <!-- End Game Page -->
-        <div id="endScreen">
-          <div id="endScreenContent">
-            <h2 id="EndTitle">GAME OVER!</h2>
-            <br />
-            <h2 id="EndMessage">You Win, Lose</h2>
-            <div id="btnReplay" class="btn" onclick="replay()">NEW GAME</div>
-          </div>
-        </div>
-        <!--Game zone and result-->
+      <!--Game zone and result-->
       <div class="game-zone">
         <div class="result">
           <p id="weapon">Choose your weapon</p>
         </div>
       </div>
-      </section>
-      
-      <!-- Icons -->
-      <div class="choices">
-        <div class="choice" id="r">
-          <img src="assets/images/rock.webp" alt="rock icon" />
-        </div>
-        <div class="choice" id="p">
-          <img src="assets/images/paper.webp" alt="paper icon" />
-        </div>
-        <div class="choice" id="s">
-          <img src="assets/images/scissors.webp" alt="scissors icon" />
-        </div>
-        <div class="choice" id="l">
-          <img src="assets/images/lizard.webp" alt="lizard icon" />
-        </div>
-        <div class="choice" id="v">
-          <img src="assets/images/spock.webp" alt="spock icon" />
-        </div>
+    </section>
+
+    <!-- Icons -->
+    <div class="choices">
+      <div class="choice" id="r">
+        <img src="assets/images/rock.webp" alt="rock icon" />
       </div>
-      <!--Scores-->
-      <div id="scoreboard">
-        <div class="score">
-          <p class="scores">USER <span id="win"> 0</span></p>
-          <p class="scores">COMPUTER <span id="lose"> 0</span></p>
-        </div>
+      <div class="choice" id="p">
+        <img src="assets/images/paper.webp" alt="paper icon" />
       </div>
-    </main>
-    <!--Game rules-->
-    <div class="container">
-      <a class="btn" href="rules.html">Rules</a>
+      <div class="choice" id="s">
+        <img src="assets/images/scissors.webp" alt="scissors icon" />
+      </div>
+      <div class="choice" id="l">
+        <img src="assets/images/lizard.webp" alt="lizard icon" />
+      </div>
+      <div class="choice" id="v">
+        <img src="assets/images/spock.webp" alt="spock icon" />
+      </div>
     </div>
-    <!--Home page-->
-    <div class="container">
-      <a class="btn" href="index.html">HOME</a>
+    <!--Scores-->
+    <div id="scoreboard">
+      <div class="score">
+        <p class="scores">USER <span id="win"> 0</span></p>
+        <p class="scores">COMPUTER <span id="lose"> 0</span></p>
+      </div>
     </div>
-    <script src="assets/js/script.js"></script>
-  </body>
+  </main>
+  <!--Game rules-->
+  <div class="container">
+    <a class="btn" href="rules.html">Rules</a>
+  </div>
+  <!--Home page-->
+  <div class="container">
+    <a class="btn" href="index.html">HOME</a>
+  </div>
+  <script src="assets/js/script.js"></script>
+</body>
+
 </html>
