@@ -80,7 +80,7 @@ The rules page shows the user how to play the game and the rules to the game. Th
 
 The start button when clicked on starts the game. The game cannot be started until this button is clicked. The button disappears once clicked.
 
-![start game button](docs/start-hover.png)
+![start game button](docs/start-game.png)
 
 When the user chooses a winning option the option glows a green border for a split second with the message stating the option beats the losing option, you win.
 
