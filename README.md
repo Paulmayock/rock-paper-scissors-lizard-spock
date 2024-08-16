@@ -220,7 +220,6 @@ After codeanywhere had issues for a number of days I decided to use visual code 
 
 Some improvements I would have liked to make to the website.
 
-- Have the "choose your weapon" and options not visible until the start button is clicked.
 - Option to end the game while playing the game
 - Option to quit the game when the game has ended instead of only the option to start new game.
 
