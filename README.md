@@ -65,7 +65,7 @@ The user goals are as follows:
 
 ![rules page](docs/small-screenrules.png)
 
-![small screen](docs/small-screen-game.png)
+![small screen](docs/small-screengame.png)
 
 
 ### Color
