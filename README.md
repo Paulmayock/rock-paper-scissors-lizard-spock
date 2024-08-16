@@ -59,6 +59,14 @@ The user goals are as follows:
 
 ![You lose](docs/you-lose.png)
 
+### Mobile View
+
+![home page](docs/small-screenhome.png)
+
+![rules page](docs/small-screenrules.png)
+
+![small screen](docs/small-screen-game.png)
+
 
 ### Color
 
@@ -101,14 +109,6 @@ When the user gets to 10 wins the user wins the game with the response Game over
 When the user loses the game and the computer gets to 10 wins first the response given is game over, you loose and gives the option to start a new game.
 
 ![losing game](docs/youLose.PNG)
-
-### Mobile View
-
-![home page](docs/small-screenhome.png)
-
-![rules page](docs/small-screenrules.png)
-
-![small screen](docs/small-screen-game.png)
 
 ## Technologies used
 
