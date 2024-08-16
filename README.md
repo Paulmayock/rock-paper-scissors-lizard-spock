@@ -196,7 +196,7 @@ The first to 10 wins. If the user wins a message will show "Game over! you win!.
 - Page is displayed as expected
 - Instruction to click the start game button displayed as expected
 - Scores are both 0
-- Link to click rules button is as expected and 
+- Link to click rules button is as expected and brings you to the rules page.
 
 **Rules page**
 - How to play and rules are shown in the correct order.
