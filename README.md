@@ -190,7 +190,7 @@ The home screen shows the start button and the options to choose when playing th
 
 Below the options are the user score and computer score.
 
-Below the score is a link for the rules page. When the user click the rules page the page brings you to another page showing hwo to play and the rules.
+Below the score is a link for the rules and home page. When the user click the rules page the page brings you to another page showing how to play and the rules.
 
 At the bottom of the rules page is a home button to bring you back to the home page.
 
