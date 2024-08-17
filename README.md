@@ -166,7 +166,7 @@ No errors were returned when passing through W3C validator. The rules page did s
 
 - CSS
 
-Unfortunately an error was received when passing the CSS through CSS validator
+No errors were received when passing the CSS through CSS validator
 
 ![CSS](docs/CSS.png)
 
