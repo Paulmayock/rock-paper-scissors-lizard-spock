@@ -266,6 +266,7 @@ h1 {
     width: 50%;
     height: 50%;
     margin: 0 10px;
+    max-width: 25%;
   }
 
   h1 {
